@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mixue Ice Cream and Tea - Celltronics España</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="mixue_external_css.css">
+    </head>
+    <body>
+        <ul>
+            <li><img src="media/mixue_logo_red.png" alt="Mixue logo"></li>
+            <li><a href="Mixue_Ice_Cream_and_Tea_-_Celltronics_España.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+        </ul>
+        <div class="spacer"  style="height: 100px;"></div>
+
+        <div class="login-div">
+            <img src="media/mixue_logo_red.png" alt="Mixue Logo" style="display: block; margin: 0 auto; width: 300px;">
+            <form class="login-form" action="#" onsubmit="return validateLoginForm()">
+                <label for="username" style="color: white;">Username or Email</label><br>
+                <input type="text" class="details" id="username" name="username" required><br><br>
+                <label for="password" style="color: white;">Password</label><br>
+                <div style="position: relative;">
+                    <input type="password" class="details" id="password" name="password" required style="padding-right: 40px;">
+                    <button type="button" onclick="togglePassword()" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); border: none; background: none; cursor: pointer;">
+                        Show
+                    </button>
+                </div>
+                <script>
+                    function togglePassword() {
+                        const pwd = document.getElementById('password');
+                        const btn = event.currentTarget;
+                        if (pwd.type === 'password') {
+                            pwd.type = 'text';
+                            btn.textContent = 'Hide';
+                        } else {
+                            pwd.type = 'password';
+                            btn.textContent = 'Show';
+                        }
+                    }
+                </script>
+                <div class="text-center" style="padding-top: 10px; padding-bottom: 10px">
+                    <a href="#" class="btn btn-primary" onclick="document.querySelector('.login-form').requestSubmit(); return false;">Login</a>
+                </div>
+            </form>
+            <script>
+                function validateLoginForm() {
+                    const username = document.getElementById('username').value.trim();
+                    const password = document.getElementById('password').value.trim();
+                    if (!username || !password) {
+                        alert('Please enter both username and password.');
+                        return false;
+                    }
+                    // You can add more validation here (e.g., email format)
+                    return true;
+                }
+            </script>
+            <hr class="login-hr">
+            <p style="color: white;">Or login with:</p>
+            <a href="#" class="socmed-login">
+                <img src="media/google_icon.png" alt="Google Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+                <img src="media/facebook_icon.png" alt="Facebook Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+                <img src="media/apple_icon.png" alt="Apple Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+            </a>
+        </div>
+        <div class="spacer" style="height: 50px;"></div>
+        
+        <footer>
+            <p>2023 Mixue Ice Cream and Tea - Celltronics España</p>
+            <p>For educational purposes only.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+<!--
+    <a target="_blank" href="https://icons8.com/icon/17949/google">google logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/uLWV5A9vXIPu/facebook">Facebook Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/85906/apple-inc">Apple Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+-->

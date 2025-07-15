@@ -1,0 +1,448 @@
+body {
+        margin: 0;
+        background-color: white; 
+        font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    /*position: fixed;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e40515;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+            
+li {
+    float: left;
+    font-size: 20px;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+li img {
+    vertical-align: middle;
+    height: 60px;
+    margin: 5px 30px;
+}
+
+li a:hover {
+    background-color: white;
+    color: #e40515;
+}
+
+.active {
+    background-color: white;
+    color: #e40515;
+}
+
+.carousel-inner img {
+    /*height: 100%;*/
+    width: 100%;
+    object-fit: contain;
+    background-color: white; 
+}
+
+#carouselExampleIndicators, #carouselExampleIndicators .carousel-inner {
+    background-color: white;
+}
+
+.carousel-item {
+    background-color: white;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23e40515' viewBox='0 0 16 16'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23e40515' viewBox='0 0 16 16'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.welcome {
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 54px;
+    text-align: center;
+}
+
+.welcome p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.product-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background-color: none;
+    padding: 15px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.product-overview-grid > div {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    border-color: #e40515;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.item {
+    height: 330px;
+}
+
+.item img {
+    height: 200px;
+}
+
+.item:hover {
+    background-color: #e40515;
+    color: white;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary {
+    background-color: #e40515 !important;
+    border-color: #e40515 !important;
+    color: white !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #fff !important;
+    color: #e40515 !important;
+    border-color: #e40515 !important;
+    transition: background 0.2s, color 0.2s;
+}
+
+footer {
+    width: 100%;
+    background-color: #e40515;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/*Below is the CSS for about us page*/
+.Mixue h3 {
+    text-align: center; 
+    margin: 0px; 
+    font-family: 'Aqum Two Classic', sans-serif;
+    font-size: 50px;
+    color: #e40515;
+}
+
+.Mixue {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Mixue-brief-history {
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e40515;
+    padding: 30px;
+    max-width: 1000px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+}
+
+.History-header h3 {
+    text-align: center; 
+    margin: 0px; 
+    font-family: 'Aqum Two Classic', sans-serif;
+    font-size: 50px;
+    color: #e40515;
+}
+
+.History-header {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history {
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e40515;
+    padding: 30px;
+    max-width: 1000px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1;
+}
+
+.history h4 {
+    font-size: 24px;
+    font-family: 'Aqum Two Classic', sans-serif;
+    font-weight: bold;
+    color: #e40515;
+    margin: 0px;
+}
+
+/*Below is the CSS for products page*/
+.menu img {
+    width: 100%;
+}
+
+.ice-cream-header, .fruit-tea-header, .milk-tea-header, .coffee-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product-hr {
+    border: none;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #e40515;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ice-cream-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 25px;
+    background-color: none;
+    padding: 5px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.ice-cream-grid > div {
+    text-align: center;
+    padding: 5px;
+
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ice-cream-grid img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+
+.ice-cream-grid h3 {
+    font-size: 20px;
+}
+
+.fruit-tea-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 25px;
+    background-color: none;
+    padding: 5px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.fruit-tea-grid > div {
+    text-align: center;
+    padding: 5px;
+
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fruit-tea-grid img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+
+.fruit-tea-grid h3 {
+    font-size: 20px;
+}
+
+.milk-tea-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 25px;
+    background-color: none;
+    padding: 5px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.milk-tea-grid > div {
+    text-align: center;
+    padding: 5px;
+
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.milk-tea-grid img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+
+.milk-tea-grid h3 {
+    font-size: 20px;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    background-color: none;
+    padding: 5px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.coffee-grid > div {
+    text-align: center;
+    padding: 5px;
+}
+
+.coffee-grid img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+
+.coffee-grid h3 {
+    font-size: 20px;
+}
+
+/*Below is the CSS for login page*/
+.details {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 25px;
+    box-sizing: border-box;
+}
+
+.login-div {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #e40515;
+    border-radius: 10px;
+}
+
+.login-form {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.login-hr {
+    border: none;
+    height: 2px;
+    background-color: #fff;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+}
+
+.text-center .btn-primary {
+    background-color: white !important;
+    border-color: #e40515 !important;
+    color: #e40515 !important;
+}
+
+.text-center .btn-primary:hover, .text-center .btn-primary:focus {
+    background-color: #e40515 !important;
+    color: white !important;
+    border-color: white !important;
+    transition: background 0.2s, color 0.2s;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.socmed-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
